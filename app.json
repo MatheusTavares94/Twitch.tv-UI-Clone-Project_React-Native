@@ -24,7 +24,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "org.serratec.reactnative.twitchcloneproject"
     },
     "web": {
       "favicon": "./assets/favicon.png"
