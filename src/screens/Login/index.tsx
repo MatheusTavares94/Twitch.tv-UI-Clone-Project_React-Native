@@ -39,36 +39,31 @@ export const Login = () => {
             <View>
                 <View style={styles.formView}>
                     <Text style={styles.formSubtitle}>Nome de usuário</Text>
-                    <TextInput
-                        // value={userName}
-                        // onChange={onChangeName}
+                    <TextInput                        
                         onFocus={handleOnFocusLogin}
                         onBlur={handleOnBlurLogin}
                         selectionColor={'#9147ff'}
                         style={focoLogin ? styles.formInputFocused : styles.formInput}
                         autoCorrect={false}
-                        autoCapitalize='none'
+                        autoCapitalize='none'                        
                     />
                 </View>
                 <View style={styles.formView}>
                     <Text style={styles.formSubtitle}>Senha</Text>
                     <View style={styles.passwordInput}>
-                        <TextInput
-                            //   value={userPassword}
-                            //   onChange={onChangePassword}
+                        <TextInput                           
                             onFocus={handleOnFocusSenha}
                             onBlur={handleOnBlurSenha}
                             selectionColor={'#9147ff'}
-                            style={focoSenha ? styles.formInputFocused : styles.formInput}
-
+                            style={focoSenha ? styles.formInputFocused : styles.formInput}                            
                             autoCorrect={false}
                             autoCapitalize='none'
-                            returnKeyType='done'
-                        //   secureTextEntry={showPassword}
+                            //Colocado após apresentação
+                            secureTextEntry={true}            
+                            
                         />
                         <TouchableOpacity
                             style={{ alignItems: "center" }}
-                        //   onPress={() => showHide()}
                         >
                             <MaterialCommunityIcons
                                 style={styles.eyeIcon}
@@ -88,7 +83,6 @@ export const Login = () => {
                     <TouchableOpacity
                         activeOpacity={0.7}
                         style={styles.loginBtn}
-                    // onPress={() => signin()}
                     >
 
                         <Text

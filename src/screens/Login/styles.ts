@@ -38,8 +38,7 @@ export const styles = StyleSheet.create({
     },
     formInput: {
         
-        backgroundColor: '#383737',
-        //backgroundColor:'#fff',
+        backgroundColor: '#383737',        
         padding: 12,
         borderRadius: 6,
         borderWidth: 0,       
@@ -47,7 +46,7 @@ export const styles = StyleSheet.create({
     },
     formInputFocused: {
         backgroundColor: cores.background,
-        //backgroundColor:'#fff',
+        color: cores.textColor,
         padding: 12,
         borderRadius: 6,
         borderWidth: 2,
@@ -71,17 +70,15 @@ export const styles = StyleSheet.create({
     troubleTxt:{
         color: '#9147ff'
     },
-    loginBtn: {
-       //backgroundColor:'#e5e5e5',   -- Quando o form não estiver preenchido
+    loginBtn: {      
        backgroundColor:'#9147ff',
        padding: 8,
        borderRadius: 6,
        alignItems:'center'
     },
-    loginTxt:{
-        //color: '#636363',  -- Quando o form não estiver preenchido
+    loginTxt:{        
         color: cores.secondaryTextColor,
         fontWeight: '600',
-        //opacity: 0.7      -- Quando o form não estiver preenchido
+        
     }
 })

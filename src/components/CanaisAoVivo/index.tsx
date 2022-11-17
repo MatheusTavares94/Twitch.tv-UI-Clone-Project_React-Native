@@ -7,6 +7,7 @@ import { Entypo } from '@expo/vector-icons';
 export const CanaisAoVivo = ({ canais }) => {
     return (
         <View style={styles.channelBox}>
+            <TouchableOpacity>
             <View style={styles.channelCard}>
                 <View>
                     <Image
@@ -55,6 +56,7 @@ export const CanaisAoVivo = ({ canais }) => {
                 </View>
                 
             </View>
+            </TouchableOpacity>
         </View >
     )
 }

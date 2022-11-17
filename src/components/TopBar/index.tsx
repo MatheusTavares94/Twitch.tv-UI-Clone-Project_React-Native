@@ -42,6 +42,8 @@ export const TopBar = () => {
         </View>
     );
 };
+
+//Verificar erro Property 'create' does not exist on type '{ new (): StyleSheet; prototype: StyleSheet; }'.ts(2339)
 const statusBarHeight =
     Platform.OS === 'android' ? Constants.statusBarHeight : 0;
 
@@ -61,21 +63,13 @@ const styles = StyleSheet.create({
         
     },
     rowContainer: {
-        // width:'60%',
-        // justifyContent: 'space-evenly',
-        // flexDirection: 'row',
-        // alignItems: 'center',  
+        
         flexDirection: 'row',
         alignItems: 'center'
     },
     iconContainer: {
-        // flexDirection: 'row',
-        backgroundColor: cores.cardBackground,
-        // paddingVertical: 8,
-        // paddingHorizontal: 18,
-        // // marginLeft: 8,
-        // borderRadius: 20,
-        // alignItems: 'center',
+        
+        backgroundColor: cores.cardBackground,        
         flexDirection: 'row',
         paddingHorizontal: 12,
         paddingVertical: 10,

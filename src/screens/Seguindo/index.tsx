@@ -18,7 +18,7 @@ export const Seguindo = () => {
                 <TopBar />
 
                 <ScrollView>
-                    <Text style={{ color: cores.textColor }}>
+                    <Text style={styles.title}>
                         Seguindo
                     </Text>
                     <View>
@@ -48,12 +48,10 @@ export const Seguindo = () => {
 
                         <CanaisOffline />
 
-                        {canaisRecomendados.map(c => {
-                            return (
-                                <CanaisRecomendados key={c.id} canais={c} />
-                            )
-                        })}
+                        
+                        <View style={{paddingTop:20}}></View>
                     </View>
+                    <View style={{marginTop:20}}></View>
 
                 </ScrollView>
             </View>

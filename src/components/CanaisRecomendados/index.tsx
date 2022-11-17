@@ -8,6 +8,7 @@ import { cores } from '../../../utils/cores';
 export const CanaisRecomendados = ({ canais }) => {
     return (
         <View style={styles.channelBox}>
+            <TouchableOpacity>
             <View style={styles.channelCard}>
                 <View>
                     <Image
@@ -62,6 +63,7 @@ export const CanaisRecomendados = ({ canais }) => {
                 />
                 
             </View>
+            </TouchableOpacity>
         </View >
     )
 }
